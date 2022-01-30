@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 074ce539657c6d14a8819fe98657fec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpPower: 3
+  jumpPower: 3.5
   ad:
   - {fileID: 8300000, guid: f92fcc5c883037645a54e78abb9fbce6, type: 3}
   - {fileID: 8300000, guid: ca5f95aee53e63448ab6f1938d184341, type: 3}
@@ -488,7 +488,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.4
+  orthographic size: 6.3
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

@@ -56,14 +56,20 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BirdJump.cs" />
     <Compile Include="Assets\Move.cs" />
-    <Compile Include="Assets\MakePipe.cs" />
     <Compile Include="Assets\Score.cs" />
     <Compile Include="Assets\ScoreUp.cs" />
+    <Compile Include="Assets\MakePipe.cs" />
     <Compile Include="Assets\RePlay.cs" />
-    <Compile Include="Assets\CurrentScore.cs" />
     <Compile Include="Assets\BestScore.cs" />
+    <Compile Include="Assets\BirdJump.cs" />
+    <Compile Include="Assets\CurrentScore.cs" />
+    <Compile Include="Assets\GoHome.cs" />
+    <Compile Include="Assets\Exit.cs" />
+    <Compile Include="Assets\Coin.cs" />
+    <Compile Include="Assets\GameStart.cs" />
+    <Compile Include="Assets\Temp.cs" />
+    <Compile Include="Assets\ShowCoin.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
