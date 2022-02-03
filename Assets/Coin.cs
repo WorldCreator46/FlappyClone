@@ -5,7 +5,7 @@ using UnityEngine;
 public class Coin : MonoBehaviour
 {
     public static int coin;
-    public SpriteRenderer renderer;
+    public new SpriteRenderer renderer;
     private void Start()
     {
         renderer = GetComponent<SpriteRenderer>();

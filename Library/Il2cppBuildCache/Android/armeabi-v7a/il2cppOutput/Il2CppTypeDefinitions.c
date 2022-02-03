@@ -2776,6 +2776,8 @@ extern Il2CppType String_t_0_0_17;
 Il2CppType String_t_0_0_17 = { (void*)223, 17, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern Il2CppType String_t_0_0_19;
 Il2CppType String_t_0_0_19 = { (void*)223, 19, IL2CPP_TYPE_STRING, 0, 0, 0 };
+extern Il2CppType String_t_0_0_22;
+Il2CppType String_t_0_0_22 = { (void*)223, 22, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern Il2CppType String_t_0_0_33;
 Il2CppType String_t_0_0_33 = { (void*)223, 33, IL2CPP_TYPE_STRING, 0, 0, 0 };
 extern Il2CppType String_t_0_0_38;
@@ -15970,7 +15972,7 @@ Il2CppGenericClass WhereListIterator_1_t7C26D95DE884BB73FD5B9B19D7C4F16A290458F4
 extern const Il2CppType WhereListIterator_1_t7C26D95DE884BB73FD5B9B19D7C4F16A290458F4_0_0_0;
 const Il2CppType WhereListIterator_1_t7C26D95DE884BB73FD5B9B19D7C4F16A290458F4_0_0_0 = { &WhereListIterator_1_t7C26D95DE884BB73FD5B9B19D7C4F16A290458F4_GenericClass, 0, IL2CPP_TYPE_GENERICINST, 0, 0, 0 };
 IL2CPP_EXTERN_C const Il2CppType* const  g_Il2CppTypeTable[];
-const Il2CppType* const  g_Il2CppTypeTable[5519] = 
+const Il2CppType* const  g_Il2CppTypeTable[5520] = 
 {
 	&Activator_CreateInstance_m94596B216EE41474ABD9CCB89007A0EC502E8288_gp_0_0_0_0,
 	&AndroidJNIHelper_ConvertFromJNIArray_m0132DF854436763C10416A31E1FAAEA1E5FA8EFA_gp_0_0_0_0,
@@ -20212,6 +20214,7 @@ const Il2CppType* const  g_Il2CppTypeTable[5519] =
 	&String_t_0_0_6,
 	&String_t_0_0_17,
 	&String_t_0_0_19,
+	&String_t_0_0_22,
 	&String_t_0_0_33,
 	&String_t_0_0_38,
 	&String_t_0_0_51,

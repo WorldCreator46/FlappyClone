@@ -6,8 +6,12 @@ using System;
 
 public class Exit : MonoBehaviour
 {
-    public string path = Application.persistentDataPath + "/Save";
-    private void Awake()
+#if UNITY_EDITOR
+    public static string path = @"C:\Data\Save";
+#else
+    public static string path = Application.persistentDataPath + @"\Save";
+#endif
+    private void Start()
     {
         DontDestroyOnLoad(gameObject);
         transform.Find("ExitCanvas").gameObject.SetActive(false);
@@ -34,7 +38,7 @@ public class Exit : MonoBehaviour
     {
         try
         {
-            if (Directory.Exists(path))
+            if (File.Exists(path))
             {
                 string[] save = File.ReadAllLines(path);
                 Score.bestScore = int.Parse(save[0].Trim());
