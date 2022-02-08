@@ -1,16 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Android;
 using System.IO;
 using System;
 
 public class Exit : MonoBehaviour
 {
-#if UNITY_EDITOR
-    public static string path = @"C:\Data\Save";
-#else
-    public static string path = Application.persistentDataPath + @"\Save";
-#endif
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
@@ -38,12 +34,8 @@ public class Exit : MonoBehaviour
     {
         try
         {
-            if (File.Exists(path))
-            {
-                string[] save = File.ReadAllLines(path);
-                Score.bestScore = int.Parse(save[0].Trim());
-                Coin.coin = int.Parse(save[1].Trim());
-            }
+            Score.bestScore = PlayerPrefs.GetInt("BestScore");
+            Coin.coin = PlayerPrefs.GetInt("Coin");
         }
         catch
         {
@@ -53,14 +45,19 @@ public class Exit : MonoBehaviour
     }
     public void SaveGame()
     {
-        File.WriteAllText(path, $"{Score.bestScore}\n{Coin.coin}");
+        try
+        {
+            PlayerPrefs.SetInt("BestScore", Score.bestScore);
+            PlayerPrefs.SetInt("Coin", Coin.coin);
+        }
+        catch
+        {
+            PlayerPrefs.SetInt("BestScore", 0);
+            PlayerPrefs.SetInt("Coin", 0);
+        }
     }
     private void OnApplicationQuit()
     {
-        try
-        {
-            SaveGame();
-        }
-        catch { }
+        SaveGame();
     }
 }
