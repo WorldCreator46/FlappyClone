@@ -33675,41 +33675,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StreamReader_get_LeaveOpen_m9649693A4B69
 		return (bool)((((int32_t)L_0) == ((int32_t)0))? 1 : 0);
 	}
 }
-// System.Boolean System.IO.StreamReader::get_EndOfStream()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StreamReader_get_EndOfStream_m577D5B15A1100691A7AC9B4F6D6D0574EBADC5BA (StreamReader_tA857ACC7ABF9AA4638E1291E6D2539C14D2963D3 * __this, const RuntimeMethod* method)
-{
-	{
-		Stream_t5DC87DD578C2C5298D98E7802E92DEABB66E2ECB * L_0 = __this->get_stream_5();
-		if (L_0)
-		{
-			goto IL_000d;
-		}
-	}
-	{
-		__Error_ReaderClosed_m55C2449E2E6A32FEB99FCEACECCB5CCCFA30EA11(/*hidden argument*/NULL);
-	}
-
-IL_000d:
-	{
-		StreamReader_CheckAsyncTaskInProgress_m359EC995C843BE386911E97814487EC798C7FE13(__this, /*hidden argument*/NULL);
-		int32_t L_1 = __this->get_charPos_11();
-		int32_t L_2 = __this->get_charLen_12();
-		if ((((int32_t)L_1) >= ((int32_t)L_2)))
-		{
-			goto IL_0023;
-		}
-	}
-	{
-		return (bool)0;
-	}
-
-IL_0023:
-	{
-		int32_t L_3;
-		L_3 = VirtFuncInvoker0< int32_t >::Invoke(13 /* System.Int32 System.IO.StreamReader::ReadBuffer() */, __this);
-		return (bool)((((int32_t)L_3) == ((int32_t)0))? 1 : 0);
-	}
-}
 // System.Int32 System.IO.StreamReader::Peek()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t StreamReader_Peek_m368511E5A8F1186EB4EF5C5BD6C71BE4008CDECD (StreamReader_tA857ACC7ABF9AA4638E1291E6D2539C14D2963D3 * __this, const RuntimeMethod* method)
 {

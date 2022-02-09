@@ -776,7 +776,17 @@ extern void PermissionCallbacks_onPermissionGranted_mBB916DA5EB099196DD500F6D926
 extern void PermissionCallbacks_onPermissionDenied_mC74555C82B9CCFB6017BCCDD42E25BB1B9D87958 (void);
 // 0x0000018A System.Void UnityEngine.Android.PermissionCallbacks::onPermissionDeniedAndDontAskAgain(System.String)
 extern void PermissionCallbacks_onPermissionDeniedAndDontAskAgain_m12D7416B65ECDCF9CBB925DDBE73CF9F0C50058B (void);
-static Il2CppMethodPointer s_methodPointers[394] = 
+// 0x0000018B UnityEngine.AndroidJavaObject UnityEngine.Android.Permission::GetActivity()
+extern void Permission_GetActivity_m74C4F20CCFBDD87829A7031071EE36EDFF511C73 (void);
+// 0x0000018C UnityEngine.AndroidJavaObject UnityEngine.Android.Permission::GetUnityPermissions()
+extern void Permission_GetUnityPermissions_mF9781EDDEA01838335052524F0625911A6FEE519 (void);
+// 0x0000018D System.Boolean UnityEngine.Android.Permission::HasUserAuthorizedPermission(System.String)
+extern void Permission_HasUserAuthorizedPermission_m85B154FEA4C22EDCD5B1EAA98E3D682A1184EA18 (void);
+// 0x0000018E System.Void UnityEngine.Android.Permission::RequestUserPermission(System.String)
+extern void Permission_RequestUserPermission_mF5FEC728857617E74AA605C6F92F1B496E2B8DBF (void);
+// 0x0000018F System.Void UnityEngine.Android.Permission::RequestUserPermissions(System.String[],UnityEngine.Android.PermissionCallbacks)
+extern void Permission_RequestUserPermissions_mF72AA2046C62C236B79355635C040F9BE654CBB5 (void);
+static Il2CppMethodPointer s_methodPointers[399] = 
 {
 	AndroidJNIHelper_get_debug_m7E1648C60EAF6EB001123CB2FC4C0B2261B88876,
 	AndroidJNIHelper_set_debug_mEBA1803E5D5578B076C996085702CD879390EE53,
@@ -1172,8 +1182,13 @@ static Il2CppMethodPointer s_methodPointers[394] =
 	PermissionCallbacks_onPermissionGranted_mBB916DA5EB099196DD500F6D9267CFE10FEA504D,
 	PermissionCallbacks_onPermissionDenied_mC74555C82B9CCFB6017BCCDD42E25BB1B9D87958,
 	PermissionCallbacks_onPermissionDeniedAndDontAskAgain_m12D7416B65ECDCF9CBB925DDBE73CF9F0C50058B,
+	Permission_GetActivity_m74C4F20CCFBDD87829A7031071EE36EDFF511C73,
+	Permission_GetUnityPermissions_mF9781EDDEA01838335052524F0625911A6FEE519,
+	Permission_HasUserAuthorizedPermission_m85B154FEA4C22EDCD5B1EAA98E3D682A1184EA18,
+	Permission_RequestUserPermission_mF5FEC728857617E74AA605C6F92F1B496E2B8DBF,
+	Permission_RequestUserPermissions_mF72AA2046C62C236B79355635C040F9BE654CBB5,
 };
-static const int32_t s_InvokerIndices[394] = 
+static const int32_t s_InvokerIndices[399] = 
 {
 	1912,
 	1885,
@@ -1569,6 +1584,11 @@ static const int32_t s_InvokerIndices[394] =
 	959,
 	959,
 	959,
+	1906,
+	1906,
+	1848,
+	1883,
+	1734,
 };
 static const Il2CppTokenRangePair s_rgctxIndices[22] = 
 {
@@ -1597,18 +1617,18 @@ static const Il2CppTokenRangePair s_rgctxIndices[22] =
 };
 static const Il2CppRGCTXDefinition s_rgctxValues[39] = 
 {
-	{ (Il2CppRGCTXDataType)3, 5849 },
-	{ (Il2CppRGCTXDataType)3, 5861 },
-	{ (Il2CppRGCTXDataType)3, 5859 },
-	{ (Il2CppRGCTXDataType)3, 5871 },
-	{ (Il2CppRGCTXDataType)3, 4684 },
-	{ (Il2CppRGCTXDataType)3, 4688 },
-	{ (Il2CppRGCTXDataType)3, 4686 },
-	{ (Il2CppRGCTXDataType)3, 4690 },
-	{ (Il2CppRGCTXDataType)3, 4670 },
-	{ (Il2CppRGCTXDataType)3, 4669 },
-	{ (Il2CppRGCTXDataType)3, 4681 },
-	{ (Il2CppRGCTXDataType)3, 4680 },
+	{ (Il2CppRGCTXDataType)3, 5852 },
+	{ (Il2CppRGCTXDataType)3, 5864 },
+	{ (Il2CppRGCTXDataType)3, 5862 },
+	{ (Il2CppRGCTXDataType)3, 5874 },
+	{ (Il2CppRGCTXDataType)3, 4687 },
+	{ (Il2CppRGCTXDataType)3, 4691 },
+	{ (Il2CppRGCTXDataType)3, 4689 },
+	{ (Il2CppRGCTXDataType)3, 4693 },
+	{ (Il2CppRGCTXDataType)3, 4672 },
+	{ (Il2CppRGCTXDataType)3, 4671 },
+	{ (Il2CppRGCTXDataType)3, 4683 },
+	{ (Il2CppRGCTXDataType)3, 4682 },
 	{ (Il2CppRGCTXDataType)3, 4635 },
 	{ (Il2CppRGCTXDataType)1, 11 },
 	{ (Il2CppRGCTXDataType)2, 11 },
@@ -1633,7 +1653,7 @@ static const Il2CppRGCTXDefinition s_rgctxValues[39] =
 	{ (Il2CppRGCTXDataType)2, 18 },
 	{ (Il2CppRGCTXDataType)1, 148 },
 	{ (Il2CppRGCTXDataType)2, 148 },
-	{ (Il2CppRGCTXDataType)3, 5872 },
+	{ (Il2CppRGCTXDataType)3, 5875 },
 	{ (Il2CppRGCTXDataType)1, 149 },
 	{ (Il2CppRGCTXDataType)1, 151 },
 };
@@ -1642,7 +1662,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGen
 const Il2CppCodeGenModule g_UnityEngine_AndroidJNIModule_CodeGenModule = 
 {
 	"UnityEngine.AndroidJNIModule.dll",
-	394,
+	399,
 	s_methodPointers,
 	0,
 	NULL,

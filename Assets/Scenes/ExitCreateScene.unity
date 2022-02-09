@@ -215,7 +215,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1392060759}
-  - component: {fileID: 1392060761}
   - component: {fileID: 1392060760}
   m_Layer: 0
   m_Name: Start
@@ -248,18 +247,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf409bfc7ac73f442b8a76d4f0e8c656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1392060761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392060758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3779196a684a9df42bd4bff8d2be90b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4598099544406872642

@@ -50,49 +50,47 @@ extern void Exit_SaveGame_mA0258F5B2F1BD38A0A345DE1D548ECA0F09E7A47 (void);
 extern void Exit_OnApplicationQuit_mF4E80AA8E4B6BF46F31DC5F8E2A1D5E145AE7B05 (void);
 // 0x00000013 System.Void Exit::.ctor()
 extern void Exit__ctor_m88392E2576E2D0334060517D7F10051AE96737CE (void);
-// 0x00000014 System.Void Exit::.cctor()
-extern void Exit__cctor_m5E4214B306ACA8AA994D049F43061CF2035704AC (void);
-// 0x00000015 System.Void GameStart::Start()
+// 0x00000014 System.Void GameStart::Start()
 extern void GameStart_Start_mD8FDF3BEC9120F83A26B58A73D1CDF675B70ADF7 (void);
-// 0x00000016 System.Void GameStart::.ctor()
+// 0x00000015 System.Void GameStart::.ctor()
 extern void GameStart__ctor_m402024398E63BF102E081A1C67BB5827C93A8B1A (void);
-// 0x00000017 System.Void GoHome::Home()
+// 0x00000016 System.Void GoHome::Home()
 extern void GoHome_Home_mE3A1794E5D033A077319B78AA062EBA69152C119 (void);
-// 0x00000018 System.Void GoHome::.ctor()
+// 0x00000017 System.Void GoHome::.ctor()
 extern void GoHome__ctor_m2F6383C08DB51CC01C59DD91C78823172BC66FBB (void);
-// 0x00000019 System.Void MakePipe::Update()
+// 0x00000018 System.Void MakePipe::Update()
 extern void MakePipe_Update_m7F2EC4E5ED049C5285E3FE98E1F714415242A18F (void);
-// 0x0000001A System.Void MakePipe::.ctor()
+// 0x00000019 System.Void MakePipe::.ctor()
 extern void MakePipe__ctor_m9CDF8605234E389AB855C316462C98D9D7239EF1 (void);
-// 0x0000001B System.Void Move::Update()
+// 0x0000001A System.Void Move::Update()
 extern void Move_Update_mEC4A4BE674AC1E951746609A1E09C93E68FD5472 (void);
-// 0x0000001C System.Void Move::.ctor()
+// 0x0000001B System.Void Move::.ctor()
 extern void Move__ctor_m7D963099B75667E43E14FB30057A669AB0EA625C (void);
-// 0x0000001D System.Void RePlay::RePlayGame()
+// 0x0000001C System.Void RePlay::RePlayGame()
 extern void RePlay_RePlayGame_mE56820D59E9254444151ADD621B2612F2126D51D (void);
-// 0x0000001E System.Void RePlay::.ctor()
+// 0x0000001D System.Void RePlay::.ctor()
 extern void RePlay__ctor_mB49B81B242AEBD433CFD9EAD1E21B84A4AFFDAA2 (void);
-// 0x0000001F System.Void Score::Start()
+// 0x0000001E System.Void Score::Start()
 extern void Score_Start_m65B0DAC30D1A9E246D4CF14672D8138B53EDA564 (void);
-// 0x00000020 System.Void Score::Update()
+// 0x0000001F System.Void Score::Update()
 extern void Score_Update_mB696B161F91F1AE220BCD4F47028DE039D9697D2 (void);
-// 0x00000021 System.Void Score::.ctor()
+// 0x00000020 System.Void Score::.ctor()
 extern void Score__ctor_mEE9186D20D9B28A735262B29AB6E8D9FF1380FB6 (void);
-// 0x00000022 System.Void Score::.cctor()
+// 0x00000021 System.Void Score::.cctor()
 extern void Score__cctor_m031C82A7EA59C3CB0C7A443426D03B025E7ECF61 (void);
-// 0x00000023 System.Void ScoreUp::OnTriggerExit2D(UnityEngine.Collider2D)
+// 0x00000022 System.Void ScoreUp::OnTriggerExit2D(UnityEngine.Collider2D)
 extern void ScoreUp_OnTriggerExit2D_m8ADF0680BD8334A200891E88218F49281E3D86E3 (void);
-// 0x00000024 System.Void ScoreUp::.ctor()
+// 0x00000023 System.Void ScoreUp::.ctor()
 extern void ScoreUp__ctor_mAFE66FED5381F2CCDD3BD757A5042AC5BEF19E90 (void);
-// 0x00000025 System.Void ShowCoin::Start()
+// 0x00000024 System.Void ShowCoin::Start()
 extern void ShowCoin_Start_m65B9F51BA99F6A2024570AE907409113DD71B34A (void);
-// 0x00000026 System.Void ShowCoin::.ctor()
+// 0x00000025 System.Void ShowCoin::.ctor()
 extern void ShowCoin__ctor_m445BE7150970480874B3754E5239FFFC099B678F (void);
-// 0x00000027 System.Void Temp::FirstLoad()
+// 0x00000026 System.Void Temp::FirstLoad()
 extern void Temp_FirstLoad_mF2AF1E1F2031D9C1347EEE128DFAB4D727761EBD (void);
-// 0x00000028 System.Void Temp::.ctor()
+// 0x00000027 System.Void Temp::.ctor()
 extern void Temp__ctor_m3F5A1BCA9C5E71542BDE70E23FABF8C2CCAAC968 (void);
-static Il2CppMethodPointer s_methodPointers[40] = 
+static Il2CppMethodPointer s_methodPointers[39] = 
 {
 	BestScore_Start_mB1421D17D2FBE7AEAE24641A3538E2A587ABB9CF,
 	BestScore__ctor_mEC3B3ECDEFEA8DD52E8289D7F63B0F0FE5A2E467,
@@ -113,7 +111,6 @@ static Il2CppMethodPointer s_methodPointers[40] =
 	Exit_SaveGame_mA0258F5B2F1BD38A0A345DE1D548ECA0F09E7A47,
 	Exit_OnApplicationQuit_mF4E80AA8E4B6BF46F31DC5F8E2A1D5E145AE7B05,
 	Exit__ctor_m88392E2576E2D0334060517D7F10051AE96737CE,
-	Exit__cctor_m5E4214B306ACA8AA994D049F43061CF2035704AC,
 	GameStart_Start_mD8FDF3BEC9120F83A26B58A73D1CDF675B70ADF7,
 	GameStart__ctor_m402024398E63BF102E081A1C67BB5827C93A8B1A,
 	GoHome_Home_mE3A1794E5D033A077319B78AA062EBA69152C119,
@@ -135,7 +132,7 @@ static Il2CppMethodPointer s_methodPointers[40] =
 	Temp_FirstLoad_mF2AF1E1F2031D9C1347EEE128DFAB4D727761EBD,
 	Temp__ctor_m3F5A1BCA9C5E71542BDE70E23FABF8C2CCAAC968,
 };
-static const int32_t s_InvokerIndices[40] = 
+static const int32_t s_InvokerIndices[39] = 
 {
 	1118,
 	1118,
@@ -156,7 +153,6 @@ static const int32_t s_InvokerIndices[40] =
 	1118,
 	1118,
 	1118,
-	1919,
 	1118,
 	1118,
 	1118,
@@ -183,7 +179,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	40,
+	39,
 	s_methodPointers,
 	0,
 	NULL,
