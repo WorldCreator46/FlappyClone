@@ -70,6 +70,7 @@
     <Compile Include="Assets\BirdJump.cs" />
     <Compile Include="Assets\Coin.cs" />
     <Compile Include="Assets\CurrentScore.cs" />
+    <Compile Include="Assets\PanelControll.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

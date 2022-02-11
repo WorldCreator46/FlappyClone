@@ -9,4 +9,8 @@ public class RePlay : MonoBehaviour
     {
         SceneManager.LoadScene("PlayScene");
     }
+    public void Shop()
+    {
+        SceneManager.LoadScene("ShopScene");
+    }
 }
