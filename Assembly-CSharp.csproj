@@ -66,11 +66,12 @@
     <Compile Include="Assets\Temp.cs" />
     <Compile Include="Assets\RePlay.cs" />
     <Compile Include="Assets\ShowCoin.cs" />
+    <Compile Include="Assets\PanelControll.cs" />
     <Compile Include="Assets\BestScore.cs" />
     <Compile Include="Assets\BirdJump.cs" />
     <Compile Include="Assets\Coin.cs" />
     <Compile Include="Assets\CurrentScore.cs" />
-    <Compile Include="Assets\PanelControll.cs" />
+    <Compile Include="Assets\ItemList.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
