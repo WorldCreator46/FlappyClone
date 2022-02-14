@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PanelControll : MonoBehaviour
 {
-    string[] panels = { "1", "2", "3", "4", "5", "6", "7" };
+    string[] panels = { "1" };
     void Start()
     {
         foreach (string temp in panels)
@@ -23,7 +23,7 @@ public class PanelControll : MonoBehaviour
                 int t = int.Parse(temp);
                 if (t <= 1)
                 {
-                    t = 7;
+                    t = panels.Length;
                 }
                 else
                 {

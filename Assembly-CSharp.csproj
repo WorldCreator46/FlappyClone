@@ -59,6 +59,7 @@
     <Compile Include="Assets\Exit.cs" />
     <Compile Include="Assets\GoHome.cs" />
     <Compile Include="Assets\Move.cs" />
+    <Compile Include="Assets\ItemList.cs" />
     <Compile Include="Assets\Score.cs" />
     <Compile Include="Assets\GameStart.cs" />
     <Compile Include="Assets\ScoreUp.cs" />
@@ -71,7 +72,8 @@
     <Compile Include="Assets\BirdJump.cs" />
     <Compile Include="Assets\Coin.cs" />
     <Compile Include="Assets\CurrentScore.cs" />
-    <Compile Include="Assets\ItemList.cs" />
+    <Compile Include="Assets\ShopCoin.cs" />
+    <Compile Include="Assets\BuyItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
