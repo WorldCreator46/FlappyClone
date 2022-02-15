@@ -13,4 +13,8 @@ public class RePlay : MonoBehaviour
     {
         SceneManager.LoadScene("ShopScene");
     }
+    public void Item()
+    {
+        SceneManager.LoadScene("ItemScene");
+    }
 }

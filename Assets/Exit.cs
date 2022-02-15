@@ -52,6 +52,7 @@ public class Exit : MonoBehaviour
             PlayerPrefs.SetInt("BestScore", Score.bestScore);
             PlayerPrefs.SetInt("Coin", Coin.coin);
             PlayerPrefs.SetString("Items", ItemList.GetDict());
+            Debug.Log(Score.bestScore+"\n"+ Coin.coin+"\n"+ ItemList.GetDict());
             Debug.Log("저장 성공");
         }
         catch
