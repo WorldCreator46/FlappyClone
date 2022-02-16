@@ -2,6 +2,7 @@ using System.Collections;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PanelControll : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class PanelControll : MonoBehaviour
                 }
                 GameObject.Find("Panel").transform.Find(temp).gameObject.SetActive(false);
                 GameObject.Find("Panel").transform.Find(t.ToString()).gameObject.SetActive(true);
+                GameObject.Find("Page").GetComponent<Text>().text = temp;
                 break;
             }
         }
@@ -42,7 +44,7 @@ public class PanelControll : MonoBehaviour
             if (GameObject.Find("Panel").transform.Find(temp).gameObject.activeSelf)
             {
                 int t = int.Parse(temp);
-                if (t >= 7)
+                if (t >= panels.Length)
                 {
                     t = 1;
                 }
@@ -52,6 +54,7 @@ public class PanelControll : MonoBehaviour
                 }
                 GameObject.Find("Panel").transform.Find(temp).gameObject.SetActive(false);
                 GameObject.Find("Panel").transform.Find(t.ToString()).gameObject.SetActive(true);
+                GameObject.Find("Page").GetComponent<Text>().text = temp;
                 break;
             }
         }
