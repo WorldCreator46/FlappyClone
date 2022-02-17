@@ -4,8 +4,8 @@ using UnityEngine;
 using Newtonsoft.Json;
 public class ItemList : MonoBehaviour
 {
-    public static Dictionary<string, int> Items = new Dictionary<string, int>() {};
-    public static Dictionary<string, bool> UseItems = new Dictionary<string, bool>() { };
+    public static Dictionary<string, int> Items;
+    public static Dictionary<string, bool> UseItems;
     public static string GetItems()
     {
         return JsonConvert.SerializeObject(Items);
@@ -18,7 +18,10 @@ public class ItemList : MonoBehaviour
         }
         catch
         {
-            Debug.Log("오류");
+            Items = new Dictionary<string, int>
+            {
+                {"", 0}
+            };
         }
     }
     public static string GetUesItems()
@@ -33,7 +36,10 @@ public class ItemList : MonoBehaviour
         }
         catch
         {
-            Debug.Log("오류");
+            UseItems = new Dictionary<string, bool>
+            {
+                {"", false}
+            };
         }
     }
 }

@@ -37,13 +37,10 @@ public class Exit : MonoBehaviour
             Score.bestScore = PlayerPrefs.GetInt("BestScore");
             Coin.coin = PlayerPrefs.GetInt("Coin");
             ItemList.SetItems(PlayerPrefs.GetString("Items"));
+            ItemList.SetUesItems(PlayerPrefs.GetString("UseItems"));
             Debug.Log("불러오기 성공");
         }
-        catch
-        {
-            Score.bestScore = 0;
-            Coin.coin = 0;
-        }
+        catch { }
     }
     public void SaveGame()
     {
@@ -52,12 +49,13 @@ public class Exit : MonoBehaviour
             PlayerPrefs.SetInt("BestScore", Score.bestScore);
             PlayerPrefs.SetInt("Coin", Coin.coin);
             PlayerPrefs.SetString("Items", ItemList.GetItems());
+            PlayerPrefs.SetString("UseItems", ItemList.GetUesItems());
             Debug.Log("저장 성공");
         }
         catch
         {
-            PlayerPrefs.SetInt("BestScore", 0);
-            PlayerPrefs.SetInt("Coin", 0);
+            ItemList.SetItems("");
+            ItemList.SetUesItems("");
         }
     }
     private void OnApplicationQuit()
