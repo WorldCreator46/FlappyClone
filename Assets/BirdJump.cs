@@ -7,9 +7,13 @@ public class BirdJump : MonoBehaviour
     Rigidbody2D rb;
     public float jumpPower = 3.0f;
     public AudioClip[] ad;
+    public int Life = 1;
+    Transform tf;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        tf = GetComponent<Transform>();
+        EventCheck();
     }
     void Update()
     {
@@ -26,6 +30,29 @@ public class BirdJump : MonoBehaviour
         {
             Score.bestScore = Score.score;
         }
-        SceneManager.LoadScene("GameOverScene");
+        Life--;
+        if(Life == 0)
+        {
+            SceneManager.LoadScene("GameOverScene");
+        }
+        else
+        {
+            if(collision.gameObject.name != "Ground")
+            {
+                Destroy(collision.gameObject);
+            }
+            else
+            {
+                tf.position = Vector3.zero;
+            }
+        }
+    }
+    void EventCheck()
+    {
+        if (ItemList.Items["DisposableShield"] > 0 && ItemList.UseItems["DisposableShield"])
+        {
+            Life++;
+            ItemList.Items["DisposableShield"]--;
+        }
     }
 }

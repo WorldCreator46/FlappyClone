@@ -74,6 +74,8 @@
     <Compile Include="Assets\BuyItem.cs" />
     <Compile Include="Assets\Coin.cs" />
     <Compile Include="Assets\CurrentScore.cs" />
+    <Compile Include="Assets\ItemCoin.cs" />
+    <Compile Include="Assets\UseItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

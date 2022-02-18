@@ -3,17 +3,22 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - BestScore
     - BirdJump
+    - BuyItem
     - Coin
     - CurrentScore
     - Exit
     - GameStart
     - GoHome
+    - ItemCoin
     - MakePipe
     - Move
+    - PanelControll
     - RePlay
     - Score
     - ScoreUp
+    - ShopCoin
     - ShowCoin
+    - UseItem
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -40,6 +45,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Outline
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/ExitCreateScene.unity:
@@ -62,17 +68,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1526}
     - Class: 114
-      Script: {instanceID: 2156}
+      Script: {instanceID: 2158}
     - Class: 114
-      Script: {instanceID: 2262}
+      Script: {instanceID: 2264}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2692}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 3106}
     - Class: 114
-      Script: {instanceID: 3332}
+      Script: {instanceID: 3310}
     - Class: 114
-      Script: {instanceID: 3478}
+      Script: {instanceID: 3480}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -109,25 +115,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1526}
     - Class: 114
-      Script: {instanceID: 2260}
-    - Class: 114
       Script: {instanceID: 2262}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2264}
     - Class: 114
-      Script: {instanceID: 2864}
+      Script: {instanceID: 2692}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 2866}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3106}
     - Class: 114
-      Script: {instanceID: 3478}
+      Script: {instanceID: 3356}
     - Class: 114
-      Script: {instanceID: 4386}
+      Script: {instanceID: 3480}
     - Class: 114
-      Script: {instanceID: 4534}
+      Script: {instanceID: 4388}
     - Class: 114
-      Script: {instanceID: 5594}
+      Script: {instanceID: 4538}
+    - Class: 114
+      Script: {instanceID: 5600}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -164,23 +170,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1526}
     - Class: 114
-      Script: {instanceID: 2262}
+      Script: {instanceID: 2264}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2692}
     - Class: 114
-      Script: {instanceID: 2864}
+      Script: {instanceID: 2866}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 3106}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3356}
     - Class: 114
-      Script: {instanceID: 3478}
+      Script: {instanceID: 3480}
     - Class: 114
-      Script: {instanceID: 4386}
+      Script: {instanceID: 3792}
     - Class: 114
-      Script: {instanceID: 4422}
+      Script: {instanceID: 4388}
     - Class: 114
-      Script: {instanceID: 4534}
+      Script: {instanceID: 4424}
+    - Class: 114
+      Script: {instanceID: 4538}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -188,6 +196,65 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/ItemScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1526}
+    - Class: 114
+      Script: {instanceID: 2262}
+    - Class: 114
+      Script: {instanceID: 2264}
+    - Class: 114
+      Script: {instanceID: 2692}
+    - Class: 114
+      Script: {instanceID: 2866}
+    - Class: 114
+      Script: {instanceID: 3106}
+    - Class: 114
+      Script: {instanceID: 3356}
+    - Class: 114
+      Script: {instanceID: 3480}
+    - Class: 114
+      Script: {instanceID: 3792}
+    - Class: 114
+      Script: {instanceID: 4428}
+    - Class: 114
+      Script: {instanceID: 42064}
+    - Class: 114
+      Script: {instanceID: 42348}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -233,27 +300,86 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 2264}
+    - Class: 114
+      Script: {instanceID: 2544}
+    - Class: 114
+      Script: {instanceID: 2692}
+    - Class: 114
+      Script: {instanceID: 2866}
+    - Class: 114
+      Script: {instanceID: 3006}
+    - Class: 114
+      Script: {instanceID: 3106}
+    - Class: 114
+      Script: {instanceID: 3356}
+    - Class: 114
+      Script: {instanceID: 3402}
+    - Class: 114
+      Script: {instanceID: 3406}
+    - Class: 114
+      Script: {instanceID: 4562}
+    - Class: 114
+      Script: {instanceID: 4880}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/ShopScene.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1526}
+    - Class: 114
+      Script: {instanceID: 2082}
+    - Class: 114
       Script: {instanceID: 2262}
     - Class: 114
-      Script: {instanceID: 2542}
+      Script: {instanceID: 2264}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2692}
     - Class: 114
-      Script: {instanceID: 2864}
+      Script: {instanceID: 2866}
     - Class: 114
-      Script: {instanceID: 3002}
+      Script: {instanceID: 3106}
     - Class: 114
-      Script: {instanceID: 3102}
+      Script: {instanceID: 3356}
     - Class: 114
-      Script: {instanceID: 3354}
+      Script: {instanceID: 3480}
     - Class: 114
-      Script: {instanceID: 3400}
+      Script: {instanceID: 3792}
     - Class: 114
-      Script: {instanceID: 3404}
+      Script: {instanceID: 4428}
     - Class: 114
-      Script: {instanceID: 4558}
-    - Class: 114
-      Script: {instanceID: 4874}
+      Script: {instanceID: 4630}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -356,6 +482,12 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: ShopCoin
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: Exit
   - hash:
       serializedVersion: 2
@@ -453,6 +585,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemList
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -701,6 +839,12 @@ ScriptsOnlyBuild:
     className: ShowCoin
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PanelControll
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -719,7 +863,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: dd424fddeacadb0177ece5d25fd3d911
+      Hash: 53a27122da0c44b8ad4b2d0548b509b8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BirdJump
@@ -729,6 +873,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.SpriteShape.Runtime.dll
     namespaceName: 
     className: SpriteShapeGeometryCache
+  - hash:
+      serializedVersion: 2
+      Hash: e1aa0bbcb22b36934e57038e91fae86b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BuyItem
   - hash:
       serializedVersion: 2
       Hash: b424b4eeb810aecb0ff91c62639241e9
@@ -867,10 +1017,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ItemCoin
+  - hash:
+      serializedVersion: 2
+      Hash: 57d586879d6568cee7d7f1d684979815
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UseItem
   platform: 13
   scenePathNames:
+  - Assets/Scenes/ShopScene.unity
   - Assets/Scenes/ExitCreateScene.unity
   - Assets/Scenes/GameStartScene.unity
   - Assets/Scenes/PlayScene.unity
   - Assets/Scenes/GameOverScene.unity
-  playerPath: E:/WorkSpace/Portfolio/Game/FlappyClone/aabFiles/1(1.3)/SkyBird.aab
+  - Assets/Scenes/ItemScene.unity
+  playerPath: E:/WorkSpace/Portfolio/Game/FlappyClone/aabFiles/1(1.4)/SkyBird.aab

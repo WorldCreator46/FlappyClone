@@ -20,7 +20,7 @@ public class ItemList : MonoBehaviour
         {
             Items = new Dictionary<string, int>
             {
-                {"", 0}
+                {"DisposableShield", 0}
             };
         }
     }
@@ -38,7 +38,7 @@ public class ItemList : MonoBehaviour
         {
             UseItems = new Dictionary<string, bool>
             {
-                {"", false}
+                {"DisposableShield", false}
             };
         }
     }

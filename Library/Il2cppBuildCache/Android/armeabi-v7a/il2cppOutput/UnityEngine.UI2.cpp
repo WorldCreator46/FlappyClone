@@ -21188,7 +21188,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ReflectionMethodsCache__ctor_m9B1FD42D9B
 		L_8 = Type_GetTypeFromHandle_m8BB57524FF7F9DB1803BC561D2B3A4DBACEB385E(L_7, /*hidden argument*/NULL);
 		NullCheck(L_8);
 		Type_t * L_9;
-		L_9 = VirtFuncInvoker0< Type_t * >::Invoke(18 /* System.Type System.Type::MakeByRefType() */, L_8);
+		L_9 = VirtFuncInvoker0< Type_t * >::Invoke(19 /* System.Type System.Type::MakeByRefType() */, L_8);
 		NullCheck(L_6);
 		ArrayElementTypeCheck (L_6, L_9);
 		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(1), (Type_t *)L_9);
